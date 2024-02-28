@@ -1,35 +1,87 @@
+/* Setze die allgemeinen Stile für den HTML- und Body-Tag */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
+/* Definiere das Box-Modell für alle Elemente */
 * {
   box-sizing: border-box;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
-
+/* Stile für den Hauptcontainer */
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+/* Stile für den Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Stile für den Hauptinhalt */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+section li:last-child {
+  border-bottom: none;
+}
+
+section li h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+section li p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Stile für den Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
