@@ -1,11 +1,12 @@
-import styles from './Footer.module.css'
+// components/Footer.js
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <>
-      <footer className={styles.footer}>
-        <img src="/logo-netlify.svg" alt="Netlify Logo" className={styles.logo} />
-      </footer>
-    </>
-  )
-}
+    <footer>
+      <p>© 2024 NotionX. Alle Rechte vorbehalten.</p>
+    </footer>
+  );
+};
+
+export default Footer;
