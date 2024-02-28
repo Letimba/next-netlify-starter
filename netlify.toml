@@ -4,3 +4,6 @@
 
 [[plugins]]
   package = "netlify-plugin-cypress"
+  command = "npm run build"
+  publish = "build" # Beispiel: Hier wird das Verzeichnis "build" als Veröffentlichungsverzeichnis festgelegt
+
