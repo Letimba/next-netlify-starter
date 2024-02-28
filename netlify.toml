@@ -3,7 +3,8 @@
   publish = ".next"
 
 [[plugins]]
-  package = "netlify-plugin-cypress"
-  command = "npm run build"
-  publish = "build" # Beispiel: Hier wird das Verzeichnis "build" als Veröffentlichungsverzeichnis festgelegt
+package = "netlify-plugin-cypress"
+pinned_version = "1.0.0" # Beispiel: Die angeheftete Version des Plugins
 
+[plugins.inputs]
+# Hier können optionale Eingaben für das Plugin angegeben werden
