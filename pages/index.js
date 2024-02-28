@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Navigation from '@components/Navigation' // Import der Navigation
 
 export default function Home() {
   return (
@@ -12,9 +13,7 @@ export default function Home() {
 
       <main>
         <Header title="NotionX" />
-        <p className="description">
-          <code>pages/index.js</code>
-        </p>
+        <Navigation /> {/* Hier wird die Navigation eingefügt */}
       </main>
 
       <Footer />
